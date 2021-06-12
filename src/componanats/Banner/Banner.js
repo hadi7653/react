@@ -1,13 +1,15 @@
 import React from 'react'
 import {Api_Key} from '../../Constants/Constants'
-import {useEffect} from 'react'
+import {useEffect , useState} from 'react'
 import axios from  '../../axios'
 import './Banner.css'
 
 function Banner() {
+    const [movie, setMovie] = useState()
     useEffect(() => {
         axios.get(`trending/all/week?api_key=${Api_Key}&language=en-US`).then((response)=>{
             console.log(response.data)
+            setMovie(response.data)
         })
         
     })
