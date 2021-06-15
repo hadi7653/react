@@ -1,6 +1,7 @@
 {
   "name": "netflix",
   "homepage":"https://hadi7653.github.io/react",
+  "homepage": "https://myusername.github.io/my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
